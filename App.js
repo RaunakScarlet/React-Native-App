@@ -6,11 +6,13 @@ const {
     ScrollView,
     Button,
     Pressable,
+    StatusBar
 } = require("react-native");
 const logo = require("./assets/adaptive-icon.png");
 export default function App() {
     return (
         <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
+            <StatusBar  backgroundColor="lightgreen" barStyle="dark-content"/>
             <ScrollView>
                 <Pressable onPress={()=>console.log("text is pressed")}>
                     <Text>
